@@ -1,11 +1,28 @@
-# ng2-odometer [![npm version](https://img.shields.io/npm/v/ng2-odometer.svg?style=flat)](https://www.npmjs.com/package/ng2-odometer) [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+# Tm-Ng-Odometer [![npm version](https://img.shields.io/npm/v/tm-ng-odometer.svg?style=flat)](https://www.npmjs.com/package/tm-ng-odometer) [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-Odometer for Angular2 that wraps HubSpot's Odometer [http://github.hubspot.com/odometer/docs/welcome/](http://github.hubspot.com/odometer/docs/welcome/)
+### Powered by: Marco Trinastich
+
+
+Odometer for [Angular 8]() that wraps on fixed HubSpot's Odometer by mtmarco87 [https://github.com/mtmarco87/odometer/](https://github.com/mtmarco87/odometer/)
+
+NOTE: In this version I have implemented an useful fix, the decimal precision passed in input to the component
+is now preserved during and after the animation, thus making visible also the zeroes at the end of an integer
+number (e.g. with a precision of 2, 1200 will be displayed as 1200.00)
+
+I have improved and updated the following original npm packages:
+
+
+## HubSpot's Odometer
+GitHub: [http://github.hubspot.com/odometer/docs/welcome/](http://github.hubspot.com/odometer/docs/welcome/)
+
+## Ng2-Odometer
+NPM: [https://www.npmjs.com/package/ng2-odometer/](https://www.npmjs.com/package/ng2-odometer/)
+Credits: Jose Andres
 
 ## Quick Start
 
 ```
-npm install ng2-odometer --save
+npm install tm-ng-odometer --save
 ```
 
 ## Table of contents
@@ -19,21 +36,21 @@ npm install ng2-odometer --save
 
 First you need to install the npm module:
 ```sh
-npm install ng2-odometer --save
+npm install tm-ng-odometer --save
 ```
 
-Then add the `Ng2OdometerModule` to the imports array of your application module.
+Then add the `TmNgOdometerModule` to the imports array of your application module.
 
 ```typescript
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Ng2OdometerModule } from 'ng2-odometer'; // <-- import the module
+import { TmNgOdometerModule } from 'tm-ng-odometer'; // <-- import the module
 import { AppComponent} from './app.component';
 
 @NgModule({
     imports: [
       BrowserModule, 
-      Ng2OdometerModule.forRoot() // <-- include it in your app module
+      TmNgOdometerModule.forRoot() // <-- include it in your app module
     ], 
     declarations: [AppComponent],
     bootstrap: [AppComponent]
@@ -45,7 +62,7 @@ export class AppModule {
 
 ## Usage 
 
-Use the `<ng2-odometer></ng2-odometer>` component to create an odometer. The `number` is required attribute. 
+Use the `<tm-ng-odometer></tm-ng-odometer>` component to create an odometer. The `number` is required attribute. 
 The `number` represents the limit at which the odometer will travel. The `config` an object with the configuration properties, this is NOT required. 
 
 ```js
@@ -53,7 +70,7 @@ The `number` represents the limit at which the odometer will travel. The `config
    selector: 'main-element',
    template: `
         ...
-        <ng2-odometer [number]="number" [config]="{ }"></ng2-odometer>
+        <tm-ng-odometer [number]="number" [config]="{ }"></tm-ng-odometer>
         <!-- Further content here -->
         ...
    `
@@ -70,7 +87,7 @@ When on manual mode (`[config]="{ auto: false }"`), you can update the `number` 
    selector: 'main-element',
    template: `
         ...
-        <ng2-odometer [number]="number" [config]="{ auto: false }" [observable]="observable"></ng2-odometer>
+        <tm-ng-odometer [number]="number" [config]="{ auto: false }" [observable]="observable"></tm-ng-odometer>
         <!-- Further content here -->
         ...
    `
@@ -106,20 +123,20 @@ The component accepts either a `[config]="{ ... }"` attribute with an object wit
    selector: 'main-element',
    template: `
         ...
-        <ng2-odometer 
+        <tm-ng-odometer 
             [number]="1000" 
             [observable]="observable" 
-            [config]="config"></ng2-odometer>
+            [config]="config"></tm-ng-odometer>
         <!-- Further content here -->
 
-        <ng2-odometer 
+        <tm-ng-odometer 
             [number]="1000" 
             [observable]="observable"
             [config]="{ animation: 'count', format: 'd', theme: 'car', value: 50, auto: false }">
-        </ng2-odometer>
+        </tm-ng-odometer>
         <!-- Further content here -->
 
-        <ng2-odometer 
+        <tm-ng-odometer 
             [number]="1000"  
             [observable]="observable"
             [animation]="'count'"
@@ -127,7 +144,7 @@ The component accepts either a `[config]="{ ... }"` attribute with an object wit
             [theme]="'car'"
             [value]="0",
             [auto]="false">
-        </ng2-odometer>
+        </tm-ng-odometer>
         <!-- Further content here -->
         ...
    `
@@ -149,7 +166,7 @@ If you add both, the `[config]` and any independent configuration, the independe
 
 ## Demo
 
-The [demo](demo) subfolder contains a project created with angular-cli that has been adapted to showcase the functionality of ng2-odometer.
+The [demo](demo) subfolder contains a project created with angular-cli that has been adapted to showcase the functionality of tm-ng-odometer.
 To execute the code follow this steps:
 
 ```
@@ -167,7 +184,7 @@ Then go to [http://localhost:4200](http://localhost:4200/) to check the demo run
 
 ## TODO:
 
-* Update to Angular4
+* Update to Angular9
 * Add tests to the library and demo
 * Add new themes
 * Create a Directive also

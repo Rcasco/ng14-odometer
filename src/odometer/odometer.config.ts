@@ -2,10 +2,7 @@
  * Created by Jose Andres on 6.15.17
  */
 
-import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
-
-export interface Ng2OdometerConfigModel {
+export interface TmNgOdometerConfigModel {
     animation?: string;
     format?: string;
     theme?: string;
@@ -14,7 +11,7 @@ export interface Ng2OdometerConfigModel {
     auto?: boolean;
 }
 
-export class Ng2OdometerConfig implements Ng2OdometerConfigModel {
+export class TmNgOdometerConfig implements TmNgOdometerConfigModel {
     animation?: string = 'slide';
     format: string = '(,ddd)';
     theme?: string = 'default';

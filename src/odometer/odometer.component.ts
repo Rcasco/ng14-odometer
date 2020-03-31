@@ -1,15 +1,15 @@
 ///<reference path="odometer.d.ts" />
 
 /**
+ * Upgraded by Marco Trinastich on 31.03.20
  * Created by Jose Andres on 6.15.17
  */
 
-import * as _ from 'lodash';
+import * as lodash from 'lodash';
 import { Component, ViewEncapsulation, Input, OnInit, OnDestroy, OnChanges, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import { Subscription } from 'rxjs/Subscription';
+import { Observable, Subscription } from 'rxjs';
 import { OdometerModel } from './odometer.model';
-import { Ng2OdometerConfig, Ng2OdometerConfigModel } from './odometer.config';
+import { TmNgOdometerConfig, TmNgOdometerConfigModel } from './odometer.config';
 import {
     CAR_THEME,
     DEFAULT_THEME,
@@ -20,12 +20,12 @@ import {
     TRAIN_STATION_THEME,
  } from './themes';
 
-// HubSpot's Oodometer
+// Tm-Odometer / fixed version of the original HubSpot's Odometer
 // https://github.com/HubSpot/odometer
-const Odometer = require('odometer');
+const Odometer = require('tm-odometer');
 
 @Component({
-    selector: 'ng2-odometer',
+    selector: 'tm-ng-odometer',
     encapsulation: ViewEncapsulation.None,
     styles: [
         CAR_THEME,
@@ -53,12 +53,12 @@ const Odometer = require('odometer');
     ],
     template: `<div #container></div>`
 })
-export class Ng2OdometerComponent implements OnInit, OnDestroy, OnChanges, AfterViewInit {
+export class TmNgOdometerComponent implements OnInit, OnDestroy, OnChanges, AfterViewInit {
     private subscription: Subscription;
     private odometer: OdometerModel;
-    @ViewChild('container', { read: ElementRef }) container: ElementRef;
+    @ViewChild('container', { read: ElementRef, static: true }) container: ElementRef;
     @Input() number: number; // Required
-    @Input() config: Ng2OdometerConfigModel = {};
+    @Input() config: TmNgOdometerConfigModel = {};
     @Input() observable: Observable<boolean> = undefined;
 
     // Individual configuration attributes
@@ -82,7 +82,7 @@ export class Ng2OdometerComponent implements OnInit, OnDestroy, OnChanges, After
 
     // Start Odometer
     private initOdometer() {
-        if (!_.isUndefined(this.container)
+        if (!lodash.isUndefined(this.container)
             && typeof Odometer !== 'undefined') {
 
             this.odometer = new Odometer({
@@ -94,48 +94,48 @@ export class Ng2OdometerComponent implements OnInit, OnDestroy, OnChanges, After
                 theme: this.config.theme,
             });
 
-            if (!_.isUndefined(this.number) && this.config.auto) {
+            if (!lodash.isUndefined(this.number) && this.config.auto) {
                 this.odometer.update(this.number);
             }
         }
     }
 
     private initConfig() {
-        this.config = _.defaults(this.config, new Ng2OdometerConfig());
+        this.config = lodash.defaults(this.config, new TmNgOdometerConfig());
 
         // Animation
-        if (!_.isUndefined(this.animation)) {
+        if (!lodash.isUndefined(this.animation)) {
             this.config.animation = this.animation;
         }
 
         // Format
-        if (!_.isUndefined(this.format)) {
+        if (!lodash.isUndefined(this.format)) {
             this.config.format = this.format;
         }
 
         // Theme
-        if (!_.isUndefined(this.theme)) {
-            this.config.theme = !_.includes(this.themes, this.theme) ? 'default' : this.theme;
+        if (!lodash.isUndefined(this.theme)) {
+            this.config.theme = !lodash.includes(this.themes, this.theme) ? 'default' : this.theme;
         }
 
         // Value
-        if (!_.isUndefined(this.value)) {
+        if (!lodash.isUndefined(this.value)) {
             this.config.value = this.value;
         }
 
         // Duration
-        if (!_.isUndefined(this.duration)) {
+        if (!lodash.isUndefined(this.duration)) {
             this.config.duration = this.duration;
         }
 
         // Auto
-        if (!_.isUndefined(this.auto)) {
+        if (!lodash.isUndefined(this.auto)) {
             this.config.auto = this.auto;
         }
 
         // Validate theme. If not part of the
         // available themes array, use the default
-        if (!_.includes(this.themes, this.config.theme)) {
+        if (!lodash.includes(this.themes, this.config.theme)) {
             this.config.theme = 'default';
         }
     }
@@ -147,9 +147,9 @@ export class Ng2OdometerComponent implements OnInit, OnDestroy, OnChanges, After
     public ngOnInit() {
 
         // Bind Observable
-        if (!_.isUndefined(this.observable) && !this.config.auto) {
+        if (!lodash.isUndefined(this.observable) && !this.config.auto) {
             this.subscription = this.observable.subscribe((trigger: boolean) => {
-                if (!_.isUndefined(trigger) && trigger) {
+                if (!lodash.isUndefined(trigger) && trigger) {
                     this.odometer.update(this.number);
                 }
             });
@@ -161,13 +161,13 @@ export class Ng2OdometerComponent implements OnInit, OnDestroy, OnChanges, After
     }
 
     public ngOnDestroy() {
-        if (!_.isUndefined(this.subscription)) {
+        if (!lodash.isUndefined(this.subscription)) {
             this.subscription.unsubscribe();
         }
     }
 
     public ngOnChanges() {
-        if (!_.isUndefined(this.number) && !_.isUndefined(this.odometer) && this.config.auto) {
+        if (!lodash.isUndefined(this.number) && !lodash.isUndefined(this.odometer) && this.config.auto) {
             this.odometer.update(this.number);
         }
     }

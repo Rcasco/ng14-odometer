@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable, Observer } from 'rxjs';
+import { share } from 'rxjs/operators';
 
 @Component({
     selector: 'app',
@@ -12,7 +13,7 @@ export class AppComponent {
     private observer: Observer<boolean>;
 
     constructor() {
-        this.observable = new Observable<boolean>((observer: any) => this.observer = observer).share();
+        this.observable = new Observable<boolean>((observer: any) => this.observer = observer).pipe(share());
 
         // For auto mode
         setTimeout(() => this.number += this.number, 5000); // Update on 5 seconds
