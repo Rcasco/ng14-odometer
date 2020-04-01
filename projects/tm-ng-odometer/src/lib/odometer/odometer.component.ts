@@ -1,12 +1,14 @@
+// tslint:disable-next-line: no-reference
 ///<reference path="odometer.d.ts" />
 
 /**
- * Upgraded by Marco Trinastich on 31.03.20
+ * Updated by Marco Trinastich on 03.31.20
  * Created by Jose Andres on 6.15.17
  */
 
 import * as lodash from 'lodash';
-import { Component, ViewEncapsulation, Input, OnInit, OnDestroy, OnChanges, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewEncapsulation, Input, OnInit, OnDestroy,
+  OnChanges, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
 import { OdometerModel } from './odometer.model';
 import { TmNgOdometerConfig, TmNgOdometerConfigModel } from './odometer.config';
@@ -25,6 +27,7 @@ import {
 const Odometer = require('tm-odometer');
 
 @Component({
+    // tslint:disable-next-line: component-selector
     selector: 'tm-ng-odometer',
     encapsulation: ViewEncapsulation.None,
     styles: [

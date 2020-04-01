@@ -1,0 +1,38 @@
+{
+  "name": "tm-ng-odometer",
+  "description": "Odometer for Angular 9",
+  "authors": [
+    "Marco Trinastich <mt.marco87@gmail.com",
+    "Jose Andres <jmandreslopez@gmail.com>"
+  ],
+  "license": "MIT",
+  "version": "1.1.6",
+  "keywords": [
+    "hubspot",
+    "odometer",
+    "tm-odometer",
+    "tm-ng-odometer",
+    "hubspot",
+    "angular",
+    "angular8",
+    "angular9",
+    "fixed odometer",
+    "odometer fixed"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mtmarco87/ng2-odometer"
+  },
+  "bugs": {
+    "url": "https://github.com/mtmarco87/ng2-odometer/issues"
+  },
+  "homepage": "https://github.com/mtmarco87/ng2-odometer#readme",
+  "peerDependencies": {
+    "@angular/common": "^9.1.0",
+    "@angular/core": "^9.1.0"
+  },
+  "dependencies": {
+    "tm-odometer": "^1.x",
+    "lodash": "^4.x"
+  }
+}

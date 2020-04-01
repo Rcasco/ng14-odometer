@@ -24,5 +24,6 @@ export interface OdometerModel {
     value: 0;
 
     // Methods
+    // tslint:disable-next-line: variable-name
     update(number: number): void;
 }

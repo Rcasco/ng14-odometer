@@ -12,10 +12,10 @@ export interface TmNgOdometerConfigModel {
 }
 
 export class TmNgOdometerConfig implements TmNgOdometerConfigModel {
-    animation?: string = 'slide';
-    format: string = '(,ddd)';
-    theme?: string = 'default';
-    value?: number = 0;
-    duration?: number = 2000;
-    auto?: boolean = true;
+    animation = 'slide';
+    format = '(,ddd)';
+    theme = 'default';
+    value = 0;
+    duration = 2000;
+    auto = true;
 }
