@@ -30,7 +30,7 @@
     "lodash-es": "^4.17.15",
     "rxjs": "^6.3.3",
     "tm-ng-odometer": "^1.1.6",
-    "tm-odometer": "^1.0.5",
+    "tm-odometer": "^1.0.6",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
