@@ -34,5 +34,8 @@
     "lodash": "^4.x",
     "tm-odometer": "^1.x",
     "tslib": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9"
   }
 }
