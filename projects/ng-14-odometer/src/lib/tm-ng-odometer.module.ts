@@ -1,5 +1,4 @@
 /**
- * Updated by Marco Trinastich on 03.31.20
  * Created by Jose Andres on 02.23.17
  */
 

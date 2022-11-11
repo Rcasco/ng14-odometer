@@ -1,7 +1,8 @@
 {
-  "name": "tm-ng-odometer",
-  "description": "Odometer for Angular 9",
+  "name": "ng-14-odometer",
+  "description": "Odometer for Angular 14",
   "authors": [
+    "Roger Casco <rogercasco1989@gmail.com",
     "Marco Trinastich <mt.marco87@gmail.com",
     "Jose Andres <jmandreslopez@gmail.com>"
   ],
@@ -10,12 +11,10 @@
   "keywords": [
     "hubspot",
     "odometer",
-    "tm-odometer",
-    "tm-ng-odometer",
+    "ng-14-odometer",
     "hubspot",
     "angular",
-    "angular8",
-    "angular9",
+    "angular14",
     "fixed odometer",
     "odometer fixed"
   ],
@@ -24,9 +23,9 @@
     "url": "https://github.com/mtmarco87/ng2-odometer"
   },
   "bugs": {
-    "url": "https://github.com/mtmarco87/ng2-odometer/issues"
+    "url": "https://github.com/rcasco/ng14-odometer/issues"
   },
-  "homepage": "https://github.com/mtmarco87/ng2-odometer#readme",
+  "homepage": "https://github.com/rcasco/ng14-odometer#readme",
   "peerDependencies": {
     "@angular/common": "^14.2.10",
     "@angular/core": "^14.2.10"

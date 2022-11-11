@@ -1,19 +1,14 @@
-# TmNgOdometer [![npm version](https://img.shields.io/npm/v/tm-ng-odometer.svg?style=flat)](https://www.npmjs.com/package/tm-ng-odometer) [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+# Ng14-Odometer [![npm version](https://img.shields.io/npm/v/tm-ng-odometer.svg?style=flat)](https://www.npmjs.com/package/tm-ng-odometer) [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-### Powered by: Marco Trinastich
+### Powered by: Roger Casco
 
-Odometer for [Angular 9]() that wraps on my decimal fixed version of HubSpot's Odometer: [NPM](https://www.npmjs.com/package/tm-odometer)/[GitHub](https://github.com/mtmarco87/odometer/)
+Odometer for [Angular 14]() that updates mtmarco87's decimal fixed version of HubSpot's Odometer: [NPM](https://www.npmjs.com/package/tm-odometer)/[GitHub](https://github.com/mtmarco87/odometer/)
 
 
 ### NOTE: 
-I have created this Angular 9 version starting from the existing Ng2Odometer by Jose Andres.
-In this version I have upgraded the whole library to Angular 9, and I have included my fixed implementation of Hubspot's Odometer that contains an useful fix: the decimal precision passed in input to the component is now preserved during and after the animation, thus making visible also the zeroes at the end of an integer number (e.g. with a precision of 2, 1200 will be displayed as 1200.00).
+I have updated this Angular 14 version starting from the existing Ng2Odometer by Jose Andres.
 
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
-
-## Info
-I have improved and updated the following original npm packages:
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.10.0.
 
 ### HubSpot's Odometer
 GitHub: [http://github.hubspot.com/odometer/docs/welcome/](http://github.hubspot.com/odometer/docs/welcome/)
@@ -25,7 +20,7 @@ NPM: [https://www.npmjs.com/package/ng2-odometer/](https://www.npmjs.com/package
 ## Quick Start
 
 ```
-npm install tm-ng-odometer --save
+npm install @rogercasco/ng-14-odometer --save
 ```
 
 ## Table of contents
@@ -39,7 +34,7 @@ npm install tm-ng-odometer --save
 
 First you need to install the npm module:
 ```sh
-npm install tm-ng-odometer --save
+npm install @rogercasco/ng-14-odometer --save
 ```
 
 Then add the `TmNgOdometerModule` to the imports array of your application module.
@@ -187,14 +182,8 @@ Then go to [http://localhost:4200](http://localhost:4200/) to check the demo run
 
 ## DONE:
 
-* Update to Angular 9
-* Fixed decimal precision issues in Odometer original library
+* Update to Angular 14
 
-## TODO:
-
-* Add tests to the library and demo
-* Add new themes
-* Create a Directive also
 
 ## License
 
