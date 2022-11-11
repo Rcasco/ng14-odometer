@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "lodash": "^4.x",
-    "tm-odometer": "^1.x"
+    "tm-odometer": "^1.x",
+    "tslib": "^2.0.0"
   }
 }
