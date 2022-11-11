@@ -1,6 +1,6 @@
 // tslint:disable-next-line: no-reference
 ///<reference path="odometer.d.ts" />
-
+declare var require: any;
 /**
  * Updated by Marco Trinastich on 03.31.20
  * Created by Jose Andres on 6.15.17
