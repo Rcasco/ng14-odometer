@@ -1,16 +1,15 @@
 {
-  "name": "tm-ng-libraries",
-  "description": "Libs: Angular 9 Odometer",
+  "name": "ng-14-odometer",
+  "description": "Libs: Angular 14 Odometer",
   "authors": [
-    "Marco Trinastich <mt.marco87@gmail.com"
+    "Roger Casco <rogercasco1989@gmail.com"
   ],
   "license": "MIT",
   "version": "1.0.0",
   "keywords": [
     "hubspot",
     "odometer",
-    "tm-odometer",
-    "tm-ng-odometer",
+    "ng-14-odometer",
     "hubspot",
     "angular",
     "fixed odometer",
@@ -18,12 +17,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mtmarco87/ng2-odometer"
+    "url": "https://github.com/rcasco/ng14-odometer"
   },
   "bugs": {
-    "url": "https://github.com/mtmarco87/ng2-odometer/issues"
+    "url": "https://github.com/rcasco/ng14-odometer/issues"
   },
-  "homepage": "https://github.com/mtmarco87/ng2-odometer#readme",
+  "homepage": "https://github.com/rcasco/ng14-odometer#readme",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
