@@ -28,12 +28,12 @@
   },
   "homepage": "https://github.com/mtmarco87/ng2-odometer#readme",
   "peerDependencies": {
-    "@angular/common": "^9.1.0",
-    "@angular/core": "^9.1.0"
+    "@angular/common": "^14.2.10",
+    "@angular/core": "^14.2.10"
   },
   "dependencies": {
     "lodash": "^4.x",
     "tm-odometer": "^1.x",
-    "tslib": "^2.0.0"
+    "tslib": "^2.4.1"
   }
 }
