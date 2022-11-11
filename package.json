@@ -1,5 +1,5 @@
 {
-  "name": "ng-14-odometer",
+  "name": "@rogercasco/ng-14-odometer",
   "description": "Libs: Angular 14 Odometer",
   "authors": [
     "Roger Casco <rogercasco1989@gmail.com>"
@@ -17,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/rcasco/ng14-odometer"
+    "url": "git+https://github.com/rcasco/ng14-odometer.git"
   },
   "bugs": {
     "url": "https://github.com/rcasco/ng14-odometer/issues"
@@ -70,5 +70,6 @@
     "ts-node": "~10.9.1",
     "tslint": "~6.1.0",
     "typescript": "~4.8.4"
-  }
+  },
+  "author": "Roger Casco"
 }
