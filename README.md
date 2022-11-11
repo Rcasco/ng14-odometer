@@ -1,19 +1,14 @@
-# TmNgOdometer [![npm version](https://img.shields.io/npm/v/tm-ng-odometer.svg?style=flat)](https://www.npmjs.com/package/tm-ng-odometer) [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+# Ng14-Odometer [![npm version](https://img.shields.io/npm/v/tm-ng-odometer.svg?style=flat)](https://www.npmjs.com/package/tm-ng-odometer) [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
 ### Powered by: Roger Casco
 
-Odometer for [Angular 14]() that wraps on mtmarco87's decimal fixed version of HubSpot's Odometer: [NPM](https://www.npmjs.com/package/tm-odometer)/[GitHub](https://github.com/mtmarco87/odometer/)
+Odometer for [Angular 14]() that updates mtmarco87's decimal fixed version of HubSpot's Odometer: [NPM](https://www.npmjs.com/package/tm-odometer)/[GitHub](https://github.com/mtmarco87/odometer/)
 
 
 ### NOTE: 
-I have created this Angular 14 version starting from the existing Ng2Odometer by Jose Andres.
-In this version I have upgraded the whole library to Angular 14, and I have included my fixed implementation of Hubspot's Odometer that contains an useful fix: the decimal precision passed in input to the component is now preserved during and after the animation, thus making visible also the zeroes at the end of an integer number (e.g. with a precision of 2, 1200 will be displayed as 1200.00).
-
+I have updated this Angular 14 version starting from the existing Ng2Odometer by Jose Andres.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.10.0.
-
-## Info
-I have improved and updated the following original npm packages:
 
 ### HubSpot's Odometer
 GitHub: [http://github.hubspot.com/odometer/docs/welcome/](http://github.hubspot.com/odometer/docs/welcome/)
