@@ -25,7 +25,7 @@ NPM: [https://www.npmjs.com/package/ng2-odometer/](https://www.npmjs.com/package
 ## Quick Start
 
 ```
-npm install tm-ng-odometer --save
+npm install @rogercasco/ng-14-odometer --save
 ```
 
 ## Table of contents
@@ -39,7 +39,7 @@ npm install tm-ng-odometer --save
 
 First you need to install the npm module:
 ```sh
-npm install tm-ng-odometer --save
+npm install @rogercasco/ng-14-odometer --save
 ```
 
 Then add the `TmNgOdometerModule` to the imports array of your application module.
