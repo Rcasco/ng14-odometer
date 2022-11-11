@@ -4,3 +4,4 @@
 
 export * from './lib/odometer';
 export * from './lib/tm-ng-odometer.module';
+export * from './lib/odometer/odometer.component';
