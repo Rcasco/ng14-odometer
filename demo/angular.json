@@ -31,8 +31,8 @@
               "src/styles.css"
             ],
             "scripts": [
-            ],
-            "es5BrowserSupport": true
+            ]
+            
           },
           "configurations": {
             "production": {
@@ -143,5 +143,8 @@
       }
     }
   },
-  "defaultProject": "TmNgOdomete"
+  "defaultProject": "TmNgOdomete",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -32,8 +32,8 @@
       }
     }
   },
-  "defaultProject": "tm-ng-odometer",
   "cli": {
-    "packageManager": "yarn"
+    "packageManager": "yarn",
+    "analytics": false
   }
 }
