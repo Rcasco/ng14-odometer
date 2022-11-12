@@ -1,6 +1,3 @@
-// tslint:disable-next-line: no-reference
-///<reference path="odometer.d.ts" />
-declare var require: any;
 /**
  * Updated by Marco Trinastich on 03.31.20
  * Created by Jose Andres on 6.15.17
@@ -24,7 +21,7 @@ import {
 
 // Tm-Odometer / fixed version of the original HubSpot's Odometer
 // https://github.com/HubSpot/odometer
-const Odometer = require('tm-odometer');
+import Odometer from '../../../node_modules/tm-odometer';
 
 @Component({
     // tslint:disable-next-line: component-selector

@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "lodash": "^4.x",
-    "tm-odometer": "^1.x",
+    "tm-odometer": "^1.0.6",
     "tslib": "^2.4.1"
   },
   "devDependencies": {
